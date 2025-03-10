@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/VladNedilkoflex_antihype.git', branch: 'master'
+                git url: 'https://github.com/VladNedilko/AntihypeTestPython', branch: 'master'
             }
         }
         stage('Run Tests') {
