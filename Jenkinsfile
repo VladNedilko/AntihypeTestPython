@@ -10,9 +10,9 @@ pipeline {
         stage('Run Tests') {
             steps {
                 dir('test') {
-                    bat 'python unit_tests.py'
-                    bat 'python integration_tests.py'
-                    bat 'python performance_tests.py'
+                    bat '"C:\Users\rregi\AppData\Local\Programs\Python\Python313\python.exe"python unit_tests.py'
+                    bat '"C:\Users\rregi\AppData\Local\Programs\Python\Python313\python.exe"python integration_tests.py'
+                    bat '"C:\Users\rregi\AppData\Local\Programs\Python\Python313\python.exe"python performance_tests.py'
                 }
             }
         }
