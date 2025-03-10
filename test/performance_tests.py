@@ -17,8 +17,8 @@ def test_scene_transition_performance():
     end_time = time.time()
     execution_time = end_time - start_time
     
-    print(f"Час виконання 1000 переходів: {execution_time:.3f} секунд")
-    assert execution_time < 15, f"Переходи занадто повільні: {execution_time:.3f} сек"
+    print(f"Execution time of 1000 transitions: {execution_time:.3f} sec")
+    assert execution_time < 15, f"Transitions are too slow: {execution_time:.3f} sec"
 
 if __name__ == '__main__':
     test_scene_transition_performance()
