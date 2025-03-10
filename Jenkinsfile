@@ -10,9 +10,9 @@ pipeline {
         stage('Run Tests') {
             steps {
                 dir('test') {
-                    sh 'python unit_tests.py'
-                    sh 'python integration_tests.py'
-                    sh 'python performance_tests.py'
+                    bat 'python unit_tests.py'
+                    bat 'python integration_tests.py'
+                    bat 'python performance_tests.py'
                 }
             }
         }
